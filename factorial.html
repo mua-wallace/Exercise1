@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercises</title>
+	<script type="text/javascript"> 
+
+		//A JavaScript program to calculate the factorial of a number
+		console.log("=======A JavaScript program to calculate the factorial of a number======");
+		let factorial=function(number){
+			let result=1;
+			let count;
+			for(count=number; count>1; count--){
+				result*=count;
+			}
+			return result;
+		}
+		console.log(factorial(5));
+
+		//A JavaScript program to calculate the factorial of a number from a user
+		console.log("=======A JavaScript program to calculate the factorial of a number from a user======");
+		const factor= function(n){
+			if(n==0){
+				return 1;
+			}
+			//Here is the recursion
+			return n*factor(n-1);
+		}
+		let n=prompt("Enter a Number: ")
+		console.log(factor(n));
+	</script>
+</head>
+<body>
+
+</body>
+</html>
